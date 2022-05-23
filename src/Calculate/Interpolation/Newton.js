@@ -161,7 +161,7 @@ class Newton extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ background: "white", borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
                             {this.state.showTableInput &&

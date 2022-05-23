@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 import { func, funcDiffDegreeN } from '../../services/Services';
 
 const InputStyle = {
-    background: "#1EEE5CC",
+    background: "##FDFEFE",
     color: "#000000",
     fontWeight: "bold",
     fontSize: "24px"
@@ -60,7 +60,7 @@ class Backwardh extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ background: "white", borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                             id="inputCard"
                         >

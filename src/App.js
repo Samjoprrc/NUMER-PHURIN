@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './screen.css';
-import { SlackOutlined,BookFilled,PieChartOutlined } from '@ant-design/icons';
+import { SlackOutlined,BookFilled, } from '@ant-design/icons';
 
 import Graphical from './Calculate/Root of Equation/Graphical';
 import Bisection from './Calculate/Root of Equation/Bisection';
@@ -48,14 +48,14 @@ class App extends Component {
     return (
       <Router>
         <Layout>
-          <Header className="header" style={{backgroundColor:"#F5CBA7 " ,height: "120px" }}>
+          <Header className="header" style={{backgroundColor:"#000000 " ,height: "200px" }}>
             <div className="headertext">
-              <label><SlackOutlined style={{color:"#FFA32F",fontSize:"40px", marginRight:"10px"}}/><h2 style={{color:"#17202A"}}>Numerical Method</h2></label>
+              <label><SlackOutlined style={{color:"#FDFEFE ",fontSize:"40px", marginRight:"30px"}}/><h2 style={{color:"#FDFEFE "}}>Numerical Method</h2></label>
             </div>
           </Header>
           <Layout>
-            <Header className="header" style={{ backgroundColor:"#F5CBA7" ,color:"#17202A"}}>
-              <Menu theme="light" mode="horizontal" style={{color:"#17202A"}} >
+            <Header className="header" style={{ backgroundColor:"#000000" ,color:"#FDFEFE "}}>
+              <Menu theme="dark" mode="horizontal" style={{color:"#FDFEFE "}} >
                 <SubMenu key="root_submenu" title={<span>Root of Equation</span>}>
                   <Menu.Item key="menu_graphoical" ><Link to="/graphical">Graphical</Link></Menu.Item>
                   <Menu.Item key="menu_bisection" ><Link to="/bisection">Bisection</Link></Menu.Item>
@@ -101,7 +101,7 @@ class App extends Component {
             </Header>
             
             <Layout style={{ padding: '0 25px 25px' }}>
-              <Content style={{ padding: 90, margin: 0, minHeight: 280, backgroundColor: "#FFFFFF" }}>
+              <Content style={{ padding: 50, margin: 50, minHeight: 280, backgroundColor: "#FFFFFF" }}>
                 <Switch>
                   {/* Root of Equation */}
                   <Route exact path="/graphical" component={Graphical} />
@@ -146,11 +146,11 @@ class App extends Component {
               </Content>
             </Layout>
           </Layout>
-          <Footer style={{ backgroundColor: "#F5CBA7 ", minHeight: 120 }}>
-            <p style={{ fontSize: "20px", fontWeight: "bold", color: "#17202A" }}>
+          <Footer style={{ backgroundColor: "#000000 ", minHeight: 120 }}>
+            <p style={{ fontSize: "20px", fontWeight: "bold", color: "#FDFEFE " }}>
               © All Right Reserved<br />
 
-              <p style={{fontSize:"22px", verticalAlign:"text-bottom"}}><BookFilled style={{ fontSize: "30px" }} /><a target="_blank" rel="noopener noreferrer" href="http://cs.kmutnb.ac.th/" style={{ color: "#17202A", textDecoration: "none" }}> Department of Computer and Information Science - King Mongkut's University of Technology North Bangkok</a></p>
+              <p style={{fontSize:"22px", verticalAlign:"text-bottom"}}><BookFilled style={{ fontSize: "30px" }} /><a target="_blank" rel="noopener noreferrer" href="http://cs.kmutnb.ac.th/" style={{ color: "#FDFEFE ", textDecoration: "none" }}> Department of Computer and Information Science - King Mongkut's University of Technology North Bangkok</a></p>
               <p >Made by Phurin Rungchat</p>
             </p>
           </Footer>

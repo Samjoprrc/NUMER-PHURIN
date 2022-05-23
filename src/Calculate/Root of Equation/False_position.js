@@ -137,7 +137,7 @@ class FalsePosition extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ background: "white", borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
                             <h2>f(x)</h2><Input size="large" name="fx" style={InputStyle}></Input>

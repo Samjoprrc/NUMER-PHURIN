@@ -93,7 +93,7 @@ class Graphical extends Component {
                 <div className="row">
                     <div className="col">
                         <Card
-                            style={{ background: "gray", color: "#FFFFFFFF", borderRadius:"10px" }}
+                            style={{ background: "white", color: "#FFFFFFFF", borderRadius:"10px" }}
                             onChange={this.handleChange}
                         >
                             <h4>f(x)</h4><Input size="large" name="fx" style={InputStyle}></Input>

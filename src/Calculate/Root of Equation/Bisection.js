@@ -154,23 +154,23 @@ class Bisection extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ background: "white", borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                             id="inputCard"
                         >
-                            <h2 style={{color:"white"}}>f(x)</h2><Input size="large" name="fx" style={InputStyle}></Input>
-                            <h2 style={{color:"white"}}>X<sub>L</sub></h2><Input size="large" name="xl" style={InputStyle}></Input>
-                            <h2 style={{color:"white"}}>X<sub>R</sub></h2><Input size="large" name="xr" style={InputStyle}></Input><br /><br />
+                            <h2 style={{color:"black"}}>f(x)</h2><Input size="large" name="fx" style={InputStyle}></Input>
+                            <h2 style={{color:"black"}}>X<sub>L</sub></h2><Input size="large" name="xl" style={InputStyle}></Input>
+                            <h2 style={{color:"black"}}>X<sub>R</sub></h2><Input size="large" name="xr" style={InputStyle}></Input><br /><br />
                             <div className="row">
                                 <div className="col-3">
                                     <Button id="submit_button" onClick={
                                     () => this.bisection(parseFloat(xl), parseFloat(xr))
                                 }
-                                    style={{ background: "#4caf50", color: "white" }}>Submit</Button>
+                                    style={{ background: "#4caf50", color: "black" }}>Submit</Button>
                                 </div>
                                 <div className="col">
                                     <Button id="submit_button_api" onClick={() => this.handleAPI()}
-                                    style={{ background: "blue", color: "white" }}>Calculate from data that get from API</Button>
+                                    style={{  color: "black" }}>Calculate from data that get from API</Button>
                                 </div>
                             </div>
 

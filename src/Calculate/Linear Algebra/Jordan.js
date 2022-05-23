@@ -144,7 +144,7 @@ class Jordan extends Component {
                     <div className="col">
                         <Card
                             bordered={true}
-                            style={{ width: 400, background: "gray", borderRadius:"15px", color: "#FFFFFFFF" }}
+                            style={{ width: 400, background: "white", borderRadius:"15px", color: "#FFFFFFFF" }}
                             onChange={this.handleChange}
                         >
 
